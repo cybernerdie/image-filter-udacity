@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joshua Paul's Image Filter For Udacity</title>
+        <style>
+        * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(#093206, #0d5b45);  
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  color: white;
+}
+
+.container {
+  margin: 0px auto;
+  padding-top: 100px;
+  width: 60%;
+}
+
+#form {
+  max-width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.form-field {
+  display: flex;
+  margin: 0 0 1rem 0;
+}
+input {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  border: 2px solid #aaa;
+  border-radius: 2px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+          <h1 style="text-align: center">Joshua Paul's Image Filter</h1>
+          <form action="/filteredimage" id="form" class="validate">
+            <div class="form-field">
+              <input type="url" name="image_url" placeholder="Enter Image Url" required/>
+            </div>
+            <div class="form-field">
+              <label for=""></label>
+              <input type="submit" value="Filter" />
+            </div>
+          </form>
+        </div>
+    </body>
+</html>
